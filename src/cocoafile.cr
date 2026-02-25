@@ -10,7 +10,7 @@ module Cocoafile
       pointers = extensions.map &.to_unsafe
 
       # Call the native function
-      result_ptr = LibNative.native_choose_file(pointers, extensions.size)
+      result_ptr = Native.native_choose_file(pointers, extensions.size)
 
       if result_ptr
         path = String.new(result_ptr)
