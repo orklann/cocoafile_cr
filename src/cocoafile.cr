@@ -2,7 +2,6 @@
 lib Native
   fun native_choose_file(ext_array : LibC::Char**, count : LibC::Int) : LibC::Char*
 end
-end
 
 module Cocoafile
   class Cocoafile
