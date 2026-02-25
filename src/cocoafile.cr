@@ -1,4 +1,4 @@
-@[Link(ldflags: "-framework Cocoa -framework Foundation #{__DIR__}/../ext/cocoafile.m")]
+@[Link(ldflags: "-framework UniformTypeIdentifiers -framework Cocoa -framework Foundation #{__DIR__}/../ext/cocoafile.m")]
 lib Native
   fun native_choose_file(ext_array : LibC::Char**, count : LibC::Int) : LibC::Char*
 end
